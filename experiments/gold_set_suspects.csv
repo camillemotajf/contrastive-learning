@@ -1,0 +1,99 @@
+index,given_label,P(human),P(bot),suspicion,user_agent,has_template
+14897,bots,0.997,0.003,0.993,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15006,bots,0.997,0.003,0.993,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15017,bots,0.993,0.007,0.987,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14822,bots,0.993,0.007,0.987,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14759,bots,0.99,0.01,0.98,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14750,bots,0.987,0.013,0.973,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14783,bots,0.987,0.013,0.973,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14851,bots,0.987,0.013,0.973,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14780,bots,0.983,0.017,0.967,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14712,bots,0.983,0.017,0.967,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14752,bots,0.98,0.02,0.96,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14846,bots,0.98,0.02,0.96,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14826,bots,0.977,0.023,0.953,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14906,bots,0.977,0.023,0.953,"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, li",False
+14736,bots,0.973,0.027,0.947,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14871,bots,0.97,0.03,0.94,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14938,bots,0.97,0.03,0.94,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15009,bots,0.963,0.037,0.927,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14703,bots,0.963,0.037,0.927,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14901,bots,0.963,0.037,0.927,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14785,bots,0.96,0.04,0.92,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KH,False
+14854,bots,0.96,0.04,0.92,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14903,bots,0.96,0.04,0.92,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+10270,bots,0.96,0.04,0.92,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+16764,bots,0.96,0.04,0.92,"Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, li",False
+10033,bots,0.957,0.043,0.913,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15158,bots,0.957,0.043,0.913,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14930,bots,0.957,0.043,0.913,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15162,bots,0.957,0.043,0.913,Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Fire,False
+14709,bots,0.95,0.05,0.9,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14852,bots,0.947,0.053,0.893,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14929,bots,0.947,0.053,0.893,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15001,bots,0.947,0.053,0.893,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14924,bots,0.94,0.06,0.88,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+10053,bots,0.94,0.06,0.88,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Ge",False
+14784,bots,0.94,0.06,0.88,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15118,bots,0.94,0.06,0.88,"Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, li",False
+10141,bots,0.937,0.063,0.873,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15200,bots,0.937,0.063,0.873,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15023,bots,0.93,0.07,0.86,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+16765,bots,0.93,0.07,0.86,"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, li",False
+14823,bots,0.927,0.073,0.853,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14747,bots,0.927,0.073,0.853,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14732,bots,0.927,0.073,0.853,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+17546,bots,0.923,0.077,0.847,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gec",False
+10219,bots,0.923,0.077,0.847,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14853,bots,0.923,0.077,0.847,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KH,False
+19807,bots,0.923,0.077,0.847,"Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, li",False
+15036,bots,0.92,0.08,0.84,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15025,bots,0.917,0.083,0.833,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15585,bots,0.917,0.083,0.833,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+10060,bots,0.913,0.087,0.827,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14952,bots,0.91,0.09,0.82,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+10078,bots,0.91,0.09,0.82,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15406,bots,0.91,0.09,0.82,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15098,bots,0.9,0.1,0.8,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+10153,bots,0.9,0.1,0.8,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14795,bots,0.9,0.1,0.8,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+10062,bots,0.897,0.103,0.793,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+10144,bots,0.893,0.107,0.787,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15841,bots,0.89,0.11,0.78,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+17539,bots,0.89,0.11,0.78,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gec",False
+10179,bots,0.89,0.11,0.78,"Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, li",False
+10178,bots,0.89,0.11,0.78,"Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, li",False
+15096,bots,0.887,0.113,0.773,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14831,bots,0.887,0.113,0.773,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+17340,bots,0.883,0.117,0.767,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15101,bots,0.88,0.12,0.76,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+17844,bots,0.88,0.12,0.76,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+18521,bots,0.88,0.12,0.76,Mozilla/5.0 (Linux; Android 11; Z5158 Build/RP1A.200720.011) AppleWebK,False
+14708,bots,0.88,0.12,0.76,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+18394,bots,0.877,0.123,0.753,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14794,bots,0.877,0.123,0.753,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (,False
+14711,bots,0.877,0.123,0.753,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15022,bots,0.877,0.123,0.753,Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Fire,False
+15011,bots,0.877,0.123,0.753,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15024,bots,0.873,0.127,0.747,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KH,False
+15021,bots,0.873,0.127,0.747,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15227,bots,0.87,0.13,0.74,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14962,bots,0.867,0.133,0.733,Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Fire,False
+10278,bots,0.867,0.133,0.733,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14774,bots,0.867,0.133,0.733,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (,False
+19714,bots,0.863,0.137,0.727,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7_8 like Mac OS X) AppleWebKit/6,False
+10043,bots,0.863,0.137,0.727,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+10040,bots,0.863,0.137,0.727,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)",False
+14738,bots,0.863,0.137,0.727,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KH,False
+10055,bots,0.86,0.14,0.72,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14766,bots,0.86,0.14,0.72,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15117,bots,0.86,0.14,0.72,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+10038,bots,0.857,0.143,0.713,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15097,bots,0.85,0.15,0.7,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+16714,bots,0.85,0.15,0.7,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605,False
+15028,bots,0.85,0.15,0.7,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+14840,bots,0.847,0.153,0.693,Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KH,False
+15013,bots,0.847,0.153,0.693,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+15312,bots,0.847,0.153,0.693,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l",False
+18917,bots,0.847,0.153,0.693,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605,False
+19745,bots,0.847,0.153,0.693,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605,False

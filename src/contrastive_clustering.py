@@ -60,26 +60,43 @@ class InstanceLoss(nn.Module):
         return self.criterion(sim_matrix, positives)
 
 class ClusterLoss(nn.Module):
-    def __init__(self, temperature=1.0):
+    """Perda de contraste de clusters do Contrastive Clustering (Li et al., 2021).
+
+    Inclui o termo de regularização por entropia H(P) que penaliza soluções
+    triviais (todas as amostras em um único cluster). Sem ele, a cabeça de
+    cluster pode colapsar e o resultado "não-supervisionado" vira sorte.
+    """
+    def __init__(self, temperature=1.0, entropy_weight=1.0):
         super().__init__()
         self.temperature = temperature
+        self.entropy_weight = entropy_weight
         self.criterion = nn.CrossEntropyLoss()
 
     def forward(self, p_i, p_j):
-        p_i = p_i.T 
+        # Termo de entropia: distribuição marginal das atribuições de cluster.
+        # Maximizar a entropia (= minimizar -H) força o uso balanceado dos clusters.
+        eps = 1e-9
+        p_i_mean = p_i.mean(dim=0)
+        p_j_mean = p_j.mean(dim=0)
+        ne = (p_i_mean * torch.log(p_i_mean + eps)).sum() \
+           + (p_j_mean * torch.log(p_j_mean + eps)).sum()
+        entropy_loss = self.entropy_weight * ne  # = -H(P_i) - H(P_j)
+
+        # Parte contrastiva: cada cluster (coluna) deve ser consistente entre as views.
+        p_i = p_i.T
         p_j = p_j.T
-        
+
         p_i = F.normalize(p_i, dim=1, p=2)
         p_j = F.normalize(p_j, dim=1, p=2)
-        
+
         num_clusters = p_i.shape[0]
         p = torch.cat((p_i, p_j), dim=0)
-        
+
         sim_matrix = torch.matmul(p, p.T) / self.temperature
-        
+
         # TRUQUE DO PYTORCH
         sim_matrix.fill_diagonal_(-1e9)
-        
+
         positives = torch.cat([torch.arange(num_clusters, 2*num_clusters), torch.arange(num_clusters)]).to(p.device)
-        
-        return self.criterion(sim_matrix, positives)
+
+        return self.criterion(sim_matrix, positives) + entropy_loss
