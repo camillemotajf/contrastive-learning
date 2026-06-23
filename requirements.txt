@@ -2,3 +2,6 @@ numpy
 matplotlib
 scikit-learn
 jupyter
+clickhouse-connect
+pymysql
+python-dotenv

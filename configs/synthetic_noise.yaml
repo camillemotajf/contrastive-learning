@@ -1,0 +1,17 @@
+# Synthetic-noise detection evaluation (the experiment WITH a ground truth)
+source: outbrain
+test_size: 0.3
+svd_dim: 64
+
+noise_rates: [0.01, 0.03, 0.05, 0.10, 0.20]
+seeds: [42, 7, 123, 2024, 999]
+noise_mode: symmetric        # symmetric | bot_to_human | human_to_bot | class_conditional
+
+# CC trained once per seed, reused across rates
+cc_epochs: 20
+cc_num_clusters: 4
+cc_aug: medium_http_aug
+
+knn_k: 20
+instability_views: 5
+ks: [50, 100, 200]

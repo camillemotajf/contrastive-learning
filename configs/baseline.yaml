@@ -1,0 +1,10 @@
+# Baselines + label-efficiency
+source: outbrain
+test_size: 0.3
+svd_dim: 64
+use_manual: true
+canonicalize: false
+seeds: [42, 7, 123]
+
+# label-efficiency curve
+fractions: [0.01, 0.05, 0.10, 0.25, 0.50, 1.00]

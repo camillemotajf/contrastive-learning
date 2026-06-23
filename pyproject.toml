@@ -12,4 +12,7 @@ dependencies = [
     "plotly>=6.7.0",
     "scikit-learn>=1.8.0",
     "seaborn>=0.13.2",
+    "clickhouse-connect>=0.8.0",
+    "pymysql>=1.1.0",
+    "python-dotenv>=1.0.0",
 ]

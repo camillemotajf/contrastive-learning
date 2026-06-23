@@ -1,0 +1,123 @@
+{
+  "config": {
+    "source": "outbrain",
+    "test_size": 0.3,
+    "svd_dim": 32,
+    "seeds": [
+      42,
+      7
+    ],
+    "noise_rate": 0.1,
+    "noise_mode": "symmetric",
+    "cc_epochs": 4,
+    "cc_num_clusters": 4,
+    "cc_aug": "medium_http_aug",
+    "knn_k": 15,
+    "ks": [
+      50,
+      100
+    ],
+    "subsample": 2500,
+    "noise_rates": [
+      0.05,
+      0.2
+    ],
+    "instability_views": 3
+  },
+  "per_seed": [
+    {
+      "variant": "knn_raw",
+      "seed": 42,
+      "noise_rate": 0.1,
+      "roc_auc": 0.924,
+      "auprc": 0.5951,
+      "precision@50": 0.8,
+      "precision@100": 0.73
+    },
+    {
+      "variant": "knn_cc",
+      "seed": 42,
+      "noise_rate": 0.1,
+      "roc_auc": 0.8976,
+      "auprc": 0.5946,
+      "precision@50": 0.9,
+      "precision@100": 0.76
+    },
+    {
+      "variant": "knn_raw_weighted",
+      "seed": 42,
+      "noise_rate": 0.1,
+      "roc_auc": 0.9276,
+      "auprc": 0.6371,
+      "precision@50": 0.84,
+      "precision@100": 0.73
+    },
+    {
+      "variant": "knn_cc_weighted",
+      "seed": 42,
+      "noise_rate": 0.1,
+      "roc_auc": 0.9065,
+      "auprc": 0.6314,
+      "precision@50": 0.88,
+      "precision@100": 0.74
+    },
+    {
+      "variant": "knn_raw",
+      "seed": 7,
+      "noise_rate": 0.1,
+      "roc_auc": 0.9303,
+      "auprc": 0.6312,
+      "precision@50": 0.84,
+      "precision@100": 0.78
+    },
+    {
+      "variant": "knn_cc",
+      "seed": 7,
+      "noise_rate": 0.1,
+      "roc_auc": 0.9164,
+      "auprc": 0.5823,
+      "precision@50": 0.84,
+      "precision@100": 0.74
+    },
+    {
+      "variant": "knn_raw_weighted",
+      "seed": 7,
+      "noise_rate": 0.1,
+      "roc_auc": 0.9348,
+      "auprc": 0.6729,
+      "precision@50": 0.84,
+      "precision@100": 0.81
+    },
+    {
+      "variant": "knn_cc_weighted",
+      "seed": 7,
+      "noise_rate": 0.1,
+      "roc_auc": 0.9229,
+      "auprc": 0.6318,
+      "precision@50": 0.82,
+      "precision@100": 0.75
+    }
+  ],
+  "aggregate": {
+    "knn_cc": {
+      "roc_auc_mean": 0.907,
+      "roc_auc_std": 0.0094,
+      "auprc_mean": 0.5885
+    },
+    "knn_cc_weighted": {
+      "roc_auc_mean": 0.9147,
+      "roc_auc_std": 0.0082,
+      "auprc_mean": 0.6316
+    },
+    "knn_raw": {
+      "roc_auc_mean": 0.9272,
+      "roc_auc_std": 0.0031,
+      "auprc_mean": 0.6131
+    },
+    "knn_raw_weighted": {
+      "roc_auc_mean": 0.9312,
+      "roc_auc_std": 0.0036,
+      "auprc_mean": 0.655
+    }
+  }
+}

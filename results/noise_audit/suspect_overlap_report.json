@@ -1,0 +1,18 @@
+{
+  "k": 100,
+  "top100_knn_raw_AND_knn_cc": {
+    "intersection": 53,
+    "jaccard": 0.3605
+  },
+  "top100_knn_cc_AND_confident_learning": {
+    "intersection": 36,
+    "jaccard": 0.2195
+  },
+  "top100_ensemble_AND_heuristic": {
+    "intersection": 13,
+    "jaccard": 0.0135
+  },
+  "confident_learning_flag_count": 21,
+  "heuristic_flag_count": 874,
+  "note": "Overlap raises confidence in a candidate; it is not proof of a mislabel. Only synthetic-noise evaluation has a ground truth."
+}

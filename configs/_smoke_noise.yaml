@@ -1,0 +1,15 @@
+# Tiny config for smoke-testing the noise runners (NOT for real results)
+source: outbrain
+test_size: 0.3
+svd_dim: 32
+subsample: 2500
+noise_rates: [0.05, 0.20]
+seeds: [42, 7]
+noise_mode: symmetric
+cc_epochs: 4
+cc_num_clusters: 4
+cc_aug: medium_http_aug
+knn_k: 15
+instability_views: 3
+ks: [50, 100]
+noise_rate: 0.10

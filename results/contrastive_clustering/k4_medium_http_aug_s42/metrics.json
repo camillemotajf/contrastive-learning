@@ -1,0 +1,67 @@
+{
+  "config": {
+    "embedding_dim": 64,
+    "projection_dim": 16,
+    "num_clusters": 4,
+    "lambda_instance": 1.0,
+    "lambda_cluster": 1.0,
+    "lambda_entropy": 1.0,
+    "temperature_instance": 0.5,
+    "temperature_cluster": 1.0,
+    "batch_size": 256,
+    "epochs": 5,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0,
+    "augmentation_type": "medium_http_aug",
+    "seed": 42
+  },
+  "clustering_train": {
+    "ari": 0.00938718654662528,
+    "nmi": 0.01126877237120859,
+    "cluster_acc": 0.39285714285714285,
+    "distribution": {
+      "sizes": [
+        608,
+        353,
+        883,
+        256
+      ],
+      "fractions": [
+        0.2895238095238095,
+        0.1680952380952381,
+        0.4204761904761905,
+        0.1219047619047619
+      ],
+      "entropy": 1.2794587521584915,
+      "n_nonempty": 4
+    }
+  },
+  "representation_probe": {
+    "f1": 0.7860576923076923,
+    "auc": 0.8800152110784063,
+    "acc": 0.8022222222222222,
+    "precision": 0.8471502590673575,
+    "recall": 0.7331838565022422
+  },
+  "clustering_test": {
+    "ari": 0.007772794145077986,
+    "nmi": 0.009946258037555498,
+    "cluster_acc": 0.3888888888888889,
+    "distribution": {
+      "sizes": [
+        259,
+        156,
+        371,
+        114
+      ],
+      "fractions": [
+        0.2877777777777778,
+        0.17333333333333334,
+        0.4122222222222222,
+        0.12666666666666668
+      ],
+      "entropy": 1.2892463261476008,
+      "n_nonempty": 4
+    }
+  }
+}

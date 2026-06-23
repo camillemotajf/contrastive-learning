@@ -1,0 +1,16 @@
+{
+  "embedding_dim": 64,
+  "projection_dim": 16,
+  "num_clusters": 4,
+  "lambda_instance": 1.0,
+  "lambda_cluster": 1.0,
+  "lambda_entropy": 1.0,
+  "temperature_instance": 0.5,
+  "temperature_cluster": 1.0,
+  "batch_size": 256,
+  "epochs": 5,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.0,
+  "augmentation_type": "medium_http_aug",
+  "seed": 42
+}
