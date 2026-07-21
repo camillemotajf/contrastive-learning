@@ -1,0 +1,12 @@
+{
+  "source": "taboola",
+  "n_train": 2800,
+  "confident_learning_flags": 74,
+  "confident_learning_flag_rate": 0.02642857142857143,
+  "heuristic_bot_flags": 312,
+  "overlap_top100": {
+    "knn_raw_vs_knn_cc": 41,
+    "knn_cc_vs_confident_learning": 42,
+    "ensemble_vs_heuristic_bots": 0
+  }
+}

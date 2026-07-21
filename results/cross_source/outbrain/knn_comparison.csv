@@ -1,0 +1,9 @@
+source,variant,seed,roc_auc
+outbrain,KNN raw,42,0.9133014455782312
+outbrain,KNN CC,42,0.9070904195011338
+outbrain,KNN raw (weighted),42,0.9189200680272109
+outbrain,KNN CC (weighted),42,0.9119090136054422
+outbrain,KNN raw,7,0.8956342120181406
+outbrain,KNN CC,7,0.9068941326530612
+outbrain,KNN raw (weighted),7,0.8996159297052155
+outbrain,KNN CC (weighted),7,0.9129520975056689

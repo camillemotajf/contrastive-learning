@@ -1,0 +1,41 @@
+{
+  "source": "outbrain",
+  "seeds": [
+    42,
+    7
+  ],
+  "balance": {
+    "n_train": 2800,
+    "n_test": 1200,
+    "train_human": 1413,
+    "train_bot": 1387,
+    "test_human": 606,
+    "test_bot": 594,
+    "feature_dim": 68
+  },
+  "best_classifier": {
+    "method": "RandomForest",
+    "f1": 0.8858196654623471,
+    "f1_std": 0.003257387882275975,
+    "auc": 0.9636408925866123
+  },
+  "rf_f1": 0.8858196654623471,
+  "cc_probe_f1": 0.7847115248381953,
+  "cc_clustering_ari": 0.07899471487744374,
+  "cc_nonempty_clusters": 4.0,
+  "ensemble_noise_roc_auc": {
+    "mean": 0.9154021322527549,
+    "std": 0.016022291823904196
+  },
+  "knn_raw_roc_auc": {
+    "mean": 0.904467828798186,
+    "std": 0.008833616780045295
+  },
+  "knn_cc_roc_auc": {
+    "mean": 0.9069922760770974,
+    "std": 9.814342403630105e-05
+  },
+  "confident_learning_flag_rate": 0.009642857142857142,
+  "heuristic_bot_flags": 996,
+  "runtime_seconds": 129769.1
+}

@@ -64,7 +64,11 @@ class ClickHouseSettings:
             port=port,
             username=os.getenv("CLICKHOUSE_USERNAME", "default"),
             password=os.getenv("CLICKHOUSE_PASSWORD", ""),
-            database=os.getenv("CLICKHOUSE_DATABASE", "shield"),
+            database=(
+                os.getenv("CLICKHOUSE_DATABASE")
+                or os.getenv("CLICKHOUSE_SHIELD_DATABASE")
+                or "shield"
+            ),
             secure=secure,
         )
 

@@ -13,7 +13,7 @@ Connection comes from ``MYSQL_URI`` (or discrete ``MYSQL_*`` vars) via
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Sequence
 
 from .config import MySQLSettings, get_settings
 
@@ -76,9 +76,29 @@ class TrafficSourceRepository:
         finally:
             conn.close()
 
-    def find_all(self, active_only: bool = True) -> List[TrafficSource]:
-        """All top-level traffic sources, ordered by id."""
-        where = "WHERE active = 1" if active_only else ""
+    def find_all(
+        self,
+        active_only: bool = True,
+        *,
+        traffic_source_ids: Optional[Sequence[int]] = None,
+        traffic_source_names: Optional[Sequence[str]] = None,
+    ) -> List[TrafficSource]:
+        """Top-level traffic sources, optionally filtered by id or name."""
+        conditions = []
+        params: list[object] = []
+        if active_only:
+            conditions.append("active = 1")
+        if traffic_source_ids:
+            ids = [int(value) for value in traffic_source_ids]
+            conditions.append(f"traffic_sources_pk IN ({', '.join(['%s'] * len(ids))})")
+            params.extend(ids)
+        if traffic_source_names:
+            names = [str(value).strip().lower() for value in traffic_source_names]
+            conditions.append(
+                f"LOWER(TRIM(traffic_source)) IN ({', '.join(['%s'] * len(names))})"
+            )
+            params.extend(names)
+        where = f"WHERE {' AND '.join(conditions)}" if conditions else ""
         rows = self._query(
             f"""
             SELECT traffic_sources_pk AS id,
@@ -87,7 +107,8 @@ class TrafficSourceRepository:
             FROM traffic_sources
             {where}
             ORDER BY traffic_sources_pk
-            """
+            """,
+            tuple(params),
         )
         return [
             TrafficSource(id=int(r["id"]), name=str(r["name"]), active=bool(r["active"]))

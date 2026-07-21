@@ -1,0 +1,9 @@
+source,variant,seed,roc_auc
+facebook,KNN raw,42,0.9942942176870748
+facebook,KNN CC,42,0.9950793650793651
+facebook,KNN raw (weighted),42,0.9950212585034014
+facebook,KNN CC (weighted),42,0.9952933673469389
+facebook,KNN raw,7,0.9927636054421768
+facebook,KNN CC,7,0.9921024659863946
+facebook,KNN raw (weighted),7,0.9933630952380953
+facebook,KNN CC (weighted),7,0.9923072562358277

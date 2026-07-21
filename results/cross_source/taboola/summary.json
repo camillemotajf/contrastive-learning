@@ -1,0 +1,41 @@
+{
+  "source": "taboola",
+  "seeds": [
+    42,
+    7
+  ],
+  "balance": {
+    "n_train": 2800,
+    "n_test": 1200,
+    "train_human": 1413,
+    "train_bot": 1387,
+    "test_human": 606,
+    "test_bot": 594,
+    "feature_dim": 68
+  },
+  "best_classifier": {
+    "method": "RandomForest",
+    "f1": 0.8979908255601567,
+    "f1_std": 0.0073925349618661484,
+    "auc": 0.9542365726496578
+  },
+  "rf_f1": 0.8979908255601567,
+  "cc_probe_f1": 0.7931172736384898,
+  "cc_clustering_ari": 0.09246199821462045,
+  "cc_nonempty_clusters": 4.0,
+  "ensemble_noise_roc_auc": {
+    "mean": 0.9268267045030733,
+    "std": 0.013413394264766313
+  },
+  "knn_raw_roc_auc": {
+    "mean": 0.9368657879818595,
+    "std": 0.009337443310657556
+  },
+  "knn_cc_roc_auc": {
+    "mean": 0.8990841128117913,
+    "std": 0.0004963860544217047
+  },
+  "confident_learning_flag_rate": 0.02642857142857143,
+  "heuristic_bot_flags": 312,
+  "runtime_seconds": 86148.6
+}

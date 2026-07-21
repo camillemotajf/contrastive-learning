@@ -1,0 +1,41 @@
+{
+  "source": "tiktok",
+  "seeds": [
+    42,
+    7
+  ],
+  "balance": {
+    "n_train": 2800,
+    "n_test": 1200,
+    "train_human": 1413,
+    "train_bot": 1387,
+    "test_human": 606,
+    "test_bot": 594,
+    "feature_dim": 68
+  },
+  "best_classifier": {
+    "method": "RandomForest",
+    "f1": 0.9768818423949117,
+    "f1_std": 0.004373251329619632,
+    "auc": 0.9953451818954002
+  },
+  "rf_f1": 0.9768818423949117,
+  "cc_probe_f1": 0.809077204111701,
+  "cc_clustering_ari": 0.007243386734944365,
+  "cc_nonempty_clusters": 4.0,
+  "ensemble_noise_roc_auc": {
+    "mean": 0.9593275677412777,
+    "std": 0.012578336953876466
+  },
+  "knn_raw_roc_auc": {
+    "mean": 0.9353950538548752,
+    "std": 0.006424674036281164
+  },
+  "knn_cc_roc_auc": {
+    "mean": 0.901531320861678,
+    "std": 0.02352182539682529
+  },
+  "confident_learning_flag_rate": 0.0032142857142857142,
+  "heuristic_bot_flags": 5,
+  "runtime_seconds": 2170.6
+}

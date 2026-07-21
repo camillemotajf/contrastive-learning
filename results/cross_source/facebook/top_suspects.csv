@@ -1,0 +1,101 @@
+rank,train_index,observed_label,ensemble,confident_learning,knn_cc,has_template,crawler_ua,script_ua,user_agent
+1,592,1,0.6944948210362081,0.39999999999999997,1.0,True,False,False,Mozilla/5.0 (Linux; Android 16; SM-S711B Build/BP4A.251205.006; wv) AppleWebKit/
+2,2091,1,0.6880617880358395,0.8266666666666667,1.0,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHT
+3,760,1,0.6836605710059946,0.9866666666666666,0.95,True,False,False,Mozilla/5.0 (Linux; Android 13; SM-A136U Build/TP1A.220624.014; wv) AppleWebKit/
+4,345,1,0.6822268752835572,0.9866666666666666,0.85,True,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+5,1461,1,0.6813545477307908,1.0,1.0,True,False,False,Mozilla/5.0 (Linux; Android 15; 23100RN82L Build/AP3A.240905.015.A2) AppleWebKit
+6,1053,1,0.6759503372978136,0.9199999999999999,1.0,True,False,False,Mozilla/5.0 (Linux; Android 15; moto g06 Build/VVOBS35.78-158-1) AppleWebKit/537
+7,2721,1,0.67143311637135,0.9866666666666666,1.0,True,False,False,Mozilla/5.0 (Linux; Android 16; SM-F946U Build/BP4A.251205.006) AppleWebKit/537.
+8,1183,1,0.6653812744137966,0.8933333333333333,1.0,True,False,False,Mozilla/5.0 (Linux; Android 16; SM-F721U Build/BP2A.250605.031.A3; wv) AppleWebK
+9,734,1,0.6648262845727313,0.9733333333333334,1.0,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHT
+10,2754,1,0.6641641245555447,0.9866666666666666,1.0,True,False,False,Mozilla/5.0 (Linux; Android 16; SM-S908U Build/BP2A.250605.031.A3; wv) AppleWebK
+11,1412,1,0.6577786166557126,0.8,1.0,True,False,False,Mozilla/5.0 (Linux; Android 12; moto g(30) Build/S0RCS32.41-10-19-14; wv) AppleW
+12,2384,1,0.6020133778389117,0.8533333333333333,1.0,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHT
+13,1284,1,0.5548555189110953,0.1333333333333333,1.0,True,False,False,Mozilla/5.0 (Linux; Android 15; 23129RA5FL Build/AQ3A.240829.003; wv) AppleWebKi
+14,971,1,0.5025241473985157,0.0,1.0,True,False,False,Mozilla/5.0 (Linux; Android 16; SM-S931U Build/BP4A.251205.006; wv) AppleWebKit/
+15,910,0,0.4863911242048366,0.0,0.4,True,False,False,Mozilla/5.0 (Linux; Android 13; 2201116PG Build/TKQ1.221114.001) AppleWebKit/537
+16,1947,1,0.4731263286028462,0.0,1.0,True,True,False,Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KH
+17,779,0,0.4574350713810447,0.0,0.95,True,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+18,2135,0,0.4491731264047863,0.3866666666666667,0.35,True,False,False,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, lik"
+19,343,1,0.4265374162880855,0.0,0.15,True,False,False,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/535.11 (KHTML, like G"
+20,1129,0,0.41176167087824006,0.0,0.75,True,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+21,1812,1,0.39583758019324117,0.0,0.2,True,False,False,Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:24.0) Gecko/20100101 Firefox/24.0 Chrom
+22,1918,0,0.3892090923656915,0.0,0.75,True,False,False,Mozilla/5.0 (Linux; Android 15; moto g35 5G Build/VUOA35.116-128; wv) AppleWebKi
+23,203,1,0.3886680409605938,0.0,0.8,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+24,2666,1,0.38635305993411045,0.0,0.3,True,True,False,Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KH
+25,66,1,0.3698608391929476,0.0,0.3,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+26,293,1,0.36890951186186,0.0,0.5,False,False,False,Instagram 434.0.0.44.74 Android (33/13; 450dpi; 1080x2400; samsung; SM-G986B; y2
+27,1376,1,0.35142674822573866,0.0,0.0,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+28,1807,0,0.345651706475716,0.0,0.75,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+29,108,1,0.3454854106053331,0.0,0.15,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+30,1398,1,0.34205670443113645,0.0,0.5,False,False,False,"Instagram 434.0.0.28.78 (iPhone18,2; iOS 26_5_1; en_US; en; scale=3.00; 1320x286"
+31,161,1,0.341794431887045,0.0,0.3,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+32,412,1,0.3382950190237915,0.0,0.85,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHT
+33,316,1,0.3369997750813176,0.0,0.75,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHT
+34,2349,1,0.33428255115601463,0.0,0.45,True,False,False,Instagram 434.0.0.44.74 Android (33/13; 440dpi; 1080x2400; Xiaomi/Redmi; 2201117
+35,635,0,0.330705280894005,0.0,0.45,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+36,481,0,0.3295095188710207,0.0,0.2,True,False,False,Mozilla/5.0 (Linux; Android 15; SM-A146U Build/AP3A.240905.015.A2; wv) AppleWebK
+37,1059,1,0.3275311216951629,0.0,0.05,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+38,1869,1,0.32375831582341646,0.0,0.4,True,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+39,606,0,0.3235678918610572,0.0,0.65,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+40,2173,0,0.3213082869415175,0.0,0.3,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+41,1194,1,0.3169172378292214,0.0,0.75,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+42,2538,1,0.31631005191119477,0.0,0.5,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+43,1798,1,0.31417996709089197,0.0,0.15,False,True,False,meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/c
+44,2159,1,0.31391963246245874,0.0,0.15,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+45,1996,1,0.3118149449080356,0.0,0.0,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+46,2665,1,0.3110595492470833,0.0,0.4,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+47,2383,0,0.31052340391659833,0.0,0.25,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+48,2066,0,0.3078620121113131,0.0,0.05,True,False,False,Mozilla/5.0 (Linux; Android 16; SM-A155M Build/BP2A.250605.031.A3; wv) AppleWebK
+49,1514,1,0.30361149965937145,0.0,0.1,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+50,2257,1,0.30349383905441435,0.0,0.75,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHT
+51,2036,1,0.3020060932983195,0.0,0.2,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+52,166,1,0.3008461860131024,0.0,0.05,True,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+53,972,0,0.2994355407937466,0.0,0.1,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+54,2636,0,0.29906236313781526,0.0,0.2,True,False,False,Mozilla/5.0 (Linux; Android 14; SM-A155M Build/UP1A.231005.007; wv) AppleWebKit/
+55,1345,1,0.2985263976998071,0.0,0.2,False,True,False,meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/c
+56,989,0,0.2980202858506784,0.0,0.25,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+57,2028,0,0.29794743690778963,0.0,0.55,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+58,1840,0,0.29752232254037386,0.0,0.35,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+59,2321,0,0.29672009986994136,0.0,0.5,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+60,419,0,0.2961291942758934,0.0,0.4,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+61,1279,1,0.2951034204068245,0.0,0.25,True,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+62,1827,1,0.29448737928412116,0.0,0.2,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+63,2699,0,0.29415247728936134,0.0,0.2,True,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+64,2379,0,0.29061800216225264,0.0,0.45,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+65,213,1,0.29035857673090043,0.0,0.2,False,True,False,meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/c
+66,12,1,0.2892000546260051,0.0,0.4,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+67,7,1,0.288112481909318,0.0,0.0,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+68,1325,0,0.28671835869365575,0.0,0.0,True,False,False,Mozilla/5.0 (Linux; Android 16; SM-A556E Build/BP4A.251205.006; wv) AppleWebKit/
+69,549,1,0.28433095367001116,0.0,0.0,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+70,1685,0,0.2837288303847693,0.0,0.5,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+71,411,1,0.28369803331868426,0.0,0.65,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHT
+72,1145,1,0.28302535207031476,0.0,0.0,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+73,909,0,0.2828887572650793,0.0,0.25,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_16 like Mac OS X) AppleWebKit/605.1.15 (
+74,1948,0,0.28088424438138443,0.0,0.2,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+75,546,0,0.28082423573787674,0.0,0.15,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+76,1919,0,0.2806545090070344,0.0,0.45,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+77,1510,1,0.2794911935358944,0.0,0.0,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+78,698,1,0.27916955420956974,0.0,0.0,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+79,2045,1,0.27873791285997096,0.0,0.05,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+80,1385,0,0.27817266432175164,0.0,0.0,True,False,False,Mozilla/5.0 (Linux; Android 14; SM-A235M Build/UP1A.231005.007; wv) AppleWebKit/
+81,212,0,0.27802450799481804,0.0,0.0,True,False,False,Mozilla/5.0 (Linux; Android 14; SM-A156M Build/UP1A.231005.007; wv) AppleWebKit/
+82,123,0,0.2776484989464219,0.0,0.1,True,False,False,Mozilla/5.0 (Linux; Android 16; SM-A566E Build/BP4A.251205.006; wv) AppleWebKit/
+83,2791,1,0.2764661204447584,0.0,0.0,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+84,1975,0,0.27577708707201554,0.0,0.3,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+85,453,1,0.2754871363369265,0.0,0.15,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+86,2368,1,0.27533671713370783,0.0,0.1,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+87,2144,0,0.27455554504884283,0.0,0.35,True,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+88,1995,0,0.2735682474297147,0.0,0.05,True,False,False,Mozilla/5.0 (Linux; Android 16; SM-A175F Build/BP2A.250605.031.A3; wv) AppleWebK
+89,40,0,0.2730176580959606,0.0,0.15,True,False,False,Mozilla/5.0 (Linux; Android 13; SM-A325M Build/TP1A.220624.014; wv) AppleWebKit/
+90,1629,1,0.27235565728875394,0.0,0.2,True,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+91,749,0,0.2721920528549674,0.0,0.0,True,False,False,Mozilla/5.0 (Linux; Android 14; SM-A235M Build/UP1A.231005.007; wv) AppleWebKit/
+92,1755,0,0.27184462842532514,0.0,0.05,True,False,False,Mozilla/5.0 (Linux; Android 15; motorola edge 50 Build/V1UWS35H.63-14-6-4-2-5; w
+93,2414,0,0.27100468234953584,0.0,0.05,True,False,False,Mozilla/5.0 (Linux; Android 12; SM-A315G Build/SP1A.210812.016; wv) AppleWebKit/
+94,1000,1,0.2709763560570401,0.0,0.1,False,True,False,meta-externalads/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/c
+95,283,1,0.2698818860474442,0.0,0.0,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+96,2288,0,0.26794347535683155,0.0,0.05,True,False,False,Mozilla/5.0 (Linux; Android 15; SM-A156M Build/AP3A.240905.015.A2; wv) AppleWebK
+97,1626,1,0.2678034094222265,0.0,0.0,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+98,1684,0,0.26778161492071395,0.0,0.05,True,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHT
+99,1654,1,0.2670409117782236,0.0,0.1,True,True,False,facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+100,2594,1,0.2670050123579486,0.0,0.55,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_5 like Mac OS X) AppleWebKit/605.1.15 (KHT

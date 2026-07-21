@@ -1,0 +1,12 @@
+{
+  "source": "facebook",
+  "n_train": 2800,
+  "confident_learning_flags": 6,
+  "confident_learning_flag_rate": 0.002142857142857143,
+  "heuristic_bot_flags": 2767,
+  "overlap_top100": {
+    "knn_raw_vs_knn_cc": 17,
+    "knn_cc_vs_confident_learning": 14,
+    "ensemble_vs_heuristic_bots": 93
+  }
+}

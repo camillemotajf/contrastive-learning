@@ -1,0 +1,41 @@
+{
+  "source": "facebook",
+  "seeds": [
+    42,
+    7
+  ],
+  "balance": {
+    "n_train": 2800,
+    "n_test": 1200,
+    "train_human": 1413,
+    "train_bot": 1387,
+    "test_human": 606,
+    "test_bot": 594,
+    "feature_dim": 68
+  },
+  "best_classifier": {
+    "method": "RandomForest",
+    "f1": 0.9967005048526787,
+    "f1_std": 7.888323105714745e-05,
+    "auc": 0.9987982416917158
+  },
+  "rf_f1": 0.9967005048526787,
+  "cc_probe_f1": 0.9724537968089151,
+  "cc_clustering_ari": 0.40006689125872685,
+  "cc_nonempty_clusters": 4.0,
+  "ensemble_noise_roc_auc": {
+    "mean": 0.9952687685545709,
+    "std": 0.0024238209659885324
+  },
+  "knn_raw_roc_auc": {
+    "mean": 0.9935289115646257,
+    "std": 0.0007653061224490164
+  },
+  "knn_cc_roc_auc": {
+    "mean": 0.9935909155328799,
+    "std": 0.0014884495464852487
+  },
+  "confident_learning_flag_rate": 0.002142857142857143,
+  "heuristic_bot_flags": 2767,
+  "runtime_seconds": 1479.7
+}

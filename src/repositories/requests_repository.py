@@ -1,18 +1,18 @@
 """Requests repository (ClickHouse, no ORM).
 
-Pulls raw HTTP requests for each traffic source from the `requests` table and
-shapes them into the ``{headers, request, decision}`` records that the feature
-pipeline (:mod:`src.pipeline`) already consumes.
+Pulls raw HTTP requests for each campaign/traffic source from the `requests`
+table and shapes them into the records that the feature pipeline already
+consumes, while preserving source/campaign metadata.
 
-Relevant `requests` columns (see TWR core `clickhouseRequestsRow`):
-    datetime, traffic_source_id, decision (safe|offer|bot),
+Relevant `requests` columns (see TWR core ``shield.requests`` table):
+    datetime, campaign_id, traffic_source_id, decision (safe|offer|bot),
     user_agent, headers Map(String,String), params Map(String,String),
     body Map(String,String)
 
 We reconstruct each record as:
     headers  -> JSON object of the header map (user_agent re-injected)
-    request  -> JSON object of the request params (the closest analogue to the
-                original ``request`` field used in the offline JSON dumps)
+    request  -> JSON object of the request params
+    body     -> JSON object of the request body
     decision -> the system label (kept as-is so callers map it to 0/1)
 
 Connection comes from ``CLICKHOUSE_URL`` (or discrete ``CLICKHOUSE_*`` vars) via
@@ -29,10 +29,12 @@ from .config import ClickHouseSettings, get_settings
 
 @dataclass(frozen=True)
 class RequestRecord:
+    campaign_id: int
     traffic_source_id: int
     decision: str
     headers: str  # JSON string (matches src.pipeline expectations)
     request: str  # JSON string
+    body: str  # JSON string
     datetime: str
 
     def to_pipeline_item(self) -> dict:
@@ -41,6 +43,10 @@ class RequestRecord:
             "headers": self.headers,
             "request": self.request,
             "decision": self.decision,
+            "campaign_id": self.campaign_id,
+            "traffic_source_id": self.traffic_source_id,
+            "datetime": self.datetime,
+            "body": self.body,
         }
 
 
@@ -64,7 +70,7 @@ def _client(settings: ClickHouseSettings):
 
 
 class RequestsRepository:
-    """Reads raw requests per traffic source from ClickHouse."""
+    """Reads raw requests per campaign and traffic source from ClickHouse."""
 
     def __init__(self, settings: Optional[ClickHouseSettings] = None):
         self._settings = settings or get_settings().clickhouse
@@ -77,13 +83,14 @@ class RequestsRepository:
         limit: Optional[int] = None,
         start: Optional[str] = None,  # "YYYY-MM-DD HH:MM:SS" (UTC)
         end: Optional[str] = None,
+        include_duplicates: bool = False,
     ) -> List[RequestRecord]:
         """All requests for one traffic source, newest first.
 
         ``decisions`` filters by the system label (e.g. ``["bot"]`` or
         ``["safe", "offer"]``); ``None`` returns every decision.
         """
-        where = ["traffic_source_id = {tsid:UInt32}"]
+        where = ["traffic_source_id = {tsid:UInt16}"]
         params: Dict[str, object] = {"tsid": int(traffic_source_id)}
 
         if decisions:
@@ -95,13 +102,17 @@ class RequestsRepository:
         if end:
             where.append("datetime < {end:DateTime}")
             params["end"] = end
+        if not include_duplicates:
+            where.append("duplicated = false")
 
         sql = f"""
             SELECT traffic_source_id,
+                   campaign_id,
                    decision,
                    user_agent,
                    headers,
                    params,
+                   body,
                    toString(datetime) AS datetime
             FROM requests
             WHERE {' AND '.join(where)}
@@ -154,11 +165,14 @@ class RequestsRepository:
         if ua and "User-Agent" not in headers and "user-agent" not in headers:
             headers["User-Agent"] = ua  # re-inject the column extracted on write
         params = dict(row.get("params") or {})
+        body = dict(row.get("body") or {})
         return RequestRecord(
+            campaign_id=int(row["campaign_id"]),
             traffic_source_id=int(row["traffic_source_id"]),
             decision=str(row["decision"]),
             headers=json.dumps(headers, ensure_ascii=False),
             request=json.dumps(params, ensure_ascii=False),
+            body=json.dumps(body, ensure_ascii=False),
             datetime=str(row.get("datetime", "")),
         )
 

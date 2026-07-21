@@ -1,0 +1,12 @@
+{
+  "source": "outbrain",
+  "n_train": 2800,
+  "confident_learning_flags": 27,
+  "confident_learning_flag_rate": 0.009642857142857142,
+  "heuristic_bot_flags": 996,
+  "overlap_top100": {
+    "knn_raw_vs_knn_cc": 28,
+    "knn_cc_vs_confident_learning": 32,
+    "ensemble_vs_heuristic_bots": 5
+  }
+}

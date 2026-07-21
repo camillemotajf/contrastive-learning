@@ -1,0 +1,101 @@
+rank,train_index,observed_label,ensemble,confident_learning,knn_cc,has_template,crawler_ua,script_ua,user_agent
+1,1211,0,0.7092929113447917,0.9733333333333334,0.8,False,False,False,Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:150.0) Gecko/20100101 Firefox/150.0
+2,206,1,0.6938959491984297,0.9866666666666666,1.0,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+3,381,1,0.6862960151663361,0.9733333333333334,0.95,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_4_2 like Mac OS X) AppleWebKit/605.1.15 (K
+4,1863,1,0.6769347917477831,0.9333333333333333,0.95,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+5,1857,1,0.6742781149574685,0.7066666666666668,0.65,False,False,False,"Mozilla/5.0 (Linux; Android 15; SM-A102U) AppleWebKit/537.36 (KHTML, like Gecko)"
+6,2126,1,0.6449579126167863,0.9066666666666667,0.95,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+7,512,1,0.6449389576821186,0.8,1.0,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+8,2793,1,0.6444098651854505,0.6799999999999999,0.9,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (K
+9,1040,1,0.6440498801721594,0.8933333333333333,0.95,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+10,1428,1,0.6405377592443954,0.9466666666666668,0.95,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_3 like Mac OS X) AppleWebKit/605.1.15 (KHT
+11,159,1,0.6344587195353625,0.9333333333333333,0.9,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+12,802,1,0.6329784888749644,0.8533333333333333,0.95,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+13,1514,1,0.6329343175795773,0.9866666666666666,0.9,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+14,1804,1,0.6314159230651685,0.6799999999999999,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+15,2358,1,0.629256181224635,0.8666666666666667,0.9,False,False,False,Mozilla/5.0 (Linux; Android 13; SM-G781U Build/TP1A.220624.014) AppleWebKit/537.
+16,1768,1,0.6242165700679402,0.9066666666666667,0.9,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+17,2444,1,0.6239107763003702,0.8,0.9,False,False,False,Mozilla/5.0 (Linux; Android 16; SM-S931U Build/BP2A.250605.031.A3) AppleWebKit/5
+18,1858,1,0.6236875407015298,0.8799999999999999,0.9,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+19,740,1,0.622953562651671,0.8,1.0,False,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+20,951,1,0.6227247116471276,0.7866666666666666,1.0,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+21,390,1,0.6208886260160288,0.7333333333333334,0.9,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+22,324,1,0.6191788265218432,0.9333333333333333,0.75,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+23,1593,1,0.6143641844437148,0.3333333333333333,0.9,False,False,False,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, lik"
+24,146,1,0.6113787828176672,0.7733333333333334,0.9,False,False,False,Mozilla/5.0 (Linux; U; Android 15; motorola edge 2024 Build/V1UANS35H.98-24-9; w
+25,1606,1,0.6090136137027279,0.5466666666666666,1.0,False,False,False,Mozilla/5.0 (Linux; Android 16; Pixel 7 Pro Build/CP1A.260405.005) AppleWebKit/5
+26,2436,1,0.6084964757171518,0.6933333333333334,1.0,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+27,2791,1,0.608248741674373,0.9199999999999999,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+28,1037,1,0.6080121844248012,0.7866666666666666,0.95,False,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+29,1075,1,0.6077363442591308,0.9066666666666667,0.85,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+30,2469,1,0.6075238817071017,0.8133333333333332,0.75,False,False,False,"Mozilla/5.0 (Linux; Android 15; SM-A102U) AppleWebKit/537.36 (KHTML, like Gecko)"
+31,207,1,0.6049762221822755,0.7866666666666666,0.9,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+32,237,1,0.6040025894380044,0.6533333333333333,1.0,False,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+33,7,1,0.6022461408733151,0.7866666666666666,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+34,1439,1,0.6008227404455581,0.9333333333333333,0.75,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_1_0 like Mac OS X) AppleWebKit/605.1.15 (K
+35,2608,1,0.5987553803964544,0.8933333333333333,0.8,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+36,1992,1,0.5961159321207217,0.8400000000000001,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+37,1121,1,0.5952109234468762,0.6799999999999999,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+38,411,1,0.5949063943878824,0.8266666666666667,0.75,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+39,1096,1,0.594123829741006,0.52,0.65,False,False,False,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, lik"
+40,2020,0,0.58852400917622,0.6933333333333334,0.4,False,False,False,Mozilla/5.0 (Android 16; Mobile; rv:150.0) Gecko/150.0 Firefox/150.0
+41,685,1,0.5877903059157942,0.7333333333333334,0.7,False,False,False,Mozilla/5.0 (Mobile; SH3320; rv:84.0) Gecko/84.0 Firefox/84.0 KAIOS/3.1
+42,498,1,0.5865100086749531,0.7866666666666666,0.95,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+43,412,1,0.5849773693564226,0.7066666666666668,0.9,False,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+44,510,1,0.5818175838354316,0.8533333333333333,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+45,2167,1,0.5795629387447608,0.8799999999999999,0.75,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+46,2406,1,0.5790433636233467,0.8133333333333332,0.75,False,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+47,1718,1,0.578480876942118,0.6933333333333334,0.85,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+48,821,1,0.5771998185788234,0.48,1.0,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+49,280,1,0.5764379149955753,0.8400000000000001,0.85,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+50,1802,1,0.5752778481047739,0.6533333333333333,0.9,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+51,1150,1,0.5750971384629382,0.8799999999999999,0.45,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+52,1963,1,0.5744437475629536,0.8799999999999999,0.6,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+53,2076,1,0.5685996918006595,0.7466666666666666,0.9,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+54,1546,1,0.5680356113486409,0.5866666666666667,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Samsun"
+55,2257,1,0.5660827374951841,0.3866666666666667,0.9,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+56,1189,1,0.5624498377246749,0.6266666666666667,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+57,1641,0,0.561775346641037,0.4666666666666666,0.65,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+58,1306,1,0.559572694642552,0.7466666666666666,0.7,False,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+59,2137,1,0.5595542736882398,0.3333333333333333,0.75,False,False,False,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, lik"
+60,2678,1,0.5570907753854966,0.72,0.8,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+61,111,1,0.5569348179366345,0.7066666666666668,0.75,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+62,2669,1,0.55545755515155,0.7866666666666666,0.75,False,False,False,"Mozilla/5.0 (iPad; CPU OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, lik"
+63,2357,1,0.5541228281741886,0.5733333333333333,0.9,False,False,False,Mozilla/5.0 (Linux; Android 16; Pixel 7a Build/CP1A.260405.005; wv) AppleWebKit/
+64,47,1,0.5531206363479518,0.72,0.65,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+65,568,1,0.5531069354895638,0.8133333333333332,0.55,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+66,1706,1,0.5526778647514423,0.5866666666666667,0.9,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+67,1406,1,0.5513138605046548,0.7733333333333334,0.7,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+68,2290,1,0.5486344364684544,0.7466666666666666,0.75,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+69,467,1,0.5484096612345449,0.7333333333333334,0.75,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+70,64,1,0.5462567144757468,0.72,0.8,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+71,202,1,0.5460137713814422,0.6133333333333333,0.75,False,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+72,2151,1,0.5421137217898527,0.45333333333333337,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+73,950,1,0.5383872939652345,0.49333333333333335,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+74,1300,1,0.5368958168823336,0.6799999999999999,0.7,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+75,1596,1,0.5340128360262528,0.7066666666666668,0.6,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+76,2191,1,0.5310372482731062,0.5466666666666666,0.75,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 26_4_2 like Mac OS X) AppleWebKit/605.1.15 (K
+77,2075,0,0.5287254904384752,0.5866666666666667,0.85,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+78,217,1,0.5280444423041096,0.9199999999999999,0.4,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+79,1544,0,0.5257534062315301,0.6666666666666667,0.8,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHT
+80,424,1,0.5247436121457905,0.6399999999999999,0.7,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/605.1.15 (K
+81,2407,0,0.5239316995648845,0.5466666666666666,0.55,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (K
+82,2402,1,0.5222982935256831,0.39999999999999997,0.8,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+83,2370,0,0.5169886669439007,0.41333333333333333,0.75,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+84,1617,1,0.5159996986483639,0.0,0.9,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+85,522,1,0.5069085956781184,0.0,0.95,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+86,1386,1,0.5063575454532301,0.6933333333333334,0.55,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+87,1105,1,0.50268763594406,0.5066666666666666,0.65,False,False,False,"Mozilla/5.0 (iPad; CPU OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, lik"
+88,579,1,0.5020012752453183,0.0,0.65,False,False,False,"Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) "
+89,310,0,0.5010348774126466,0.5333333333333334,0.3,False,False,False,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, lik"
+90,1345,1,0.4999691632082847,0.72,0.7,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+91,2488,0,0.4996874021453868,0.56,0.85,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+92,1318,1,0.49943491129270656,0.5866666666666667,1.0,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+93,264,1,0.4985022792007296,0.4666666666666666,0.8,False,False,False,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_8) AppleWebKit/605.1.15 (KHTML, lik"
+94,126,1,0.4958769536159265,0.6666666666666667,0.5,False,False,False,Mozilla/5.0 (Linux; Android 13; ZG55 Build/TP1A.220624.014; wv) AppleWebKit/537.
+95,2313,0,0.49519568961924754,0.17333333333333334,0.9,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (K
+96,1895,1,0.4933852893614734,0.56,0.65,False,False,False,Mozilla/5.0 (Linux; Android 13; ZG55 Build/TP1A.220624.014; wv) AppleWebKit/537.
+97,2662,1,0.49083172281443277,0.45333333333333337,0.75,False,False,False,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+98,1298,1,0.4906267730826166,0.6000000000000001,0.7,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT
+99,480,1,0.4877687574001261,0.30666666666666664,0.75,False,False,False,"Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+100,2505,0,0.48620526957102794,0.30666666666666664,0.9,False,False,False,Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHT

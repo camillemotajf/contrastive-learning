@@ -1,0 +1,9 @@
+source,variant,seed,roc_auc
+tiktok,KNN raw,42,0.9418197278911564
+tiktok,KNN CC,42,0.9250531462585033
+tiktok,KNN raw (weighted),42,0.9490844671201816
+tiktok,KNN CC (weighted),42,0.9360232426303855
+tiktok,KNN raw,7,0.9289703798185941
+tiktok,KNN CC,7,0.8780094954648527
+tiktok,KNN raw (weighted),7,0.9370379818594105
+tiktok,KNN CC (weighted),7,0.898047052154195

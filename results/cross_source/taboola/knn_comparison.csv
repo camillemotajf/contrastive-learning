@@ -1,0 +1,9 @@
+source,variant,seed,roc_auc
+taboola,KNN raw,42,0.946203231292517
+taboola,KNN CC,42,0.899580498866213
+taboola,KNN raw (weighted),42,0.9500878684807257
+taboola,KNN CC (weighted),42,0.9060983560090703
+taboola,KNN raw,7,0.9275283446712019
+taboola,KNN CC,7,0.8985877267573696
+taboola,KNN raw (weighted),7,0.9292942176870749
+taboola,KNN CC (weighted),7,0.9038222789115646

@@ -17,13 +17,19 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import StratifiedKFold, cross_val_predict
 
 
-def oof_probabilities(X, y, seed: int = 42, n_splits: int = 5,
-                      n_estimators: int = 300) -> np.ndarray:
+def oof_probabilities(X, y, seed: int = 42, n_splits: int = 4,
+                      n_estimators: int = 150) -> np.ndarray:
     """Out-of-fold predicted probabilities from a strong RF (no leakage:
-    every sample is scored by a fold that excluded it)."""
+    every sample is scored by a fold that excluded it).
+
+    Parallelism note: the RandomForest fans out across cores (``n_jobs=-1``)
+    while the cross-validation runs folds **sequentially** (``n_jobs=1``).
+    Parallelising both levels oversubscribes the CPU (cores² workers) and, on
+    Windows ``spawn``, thrashes badly — that single mistake made this call
+    ~30x slower. Keep exactly one level parallel."""
     clf = RandomForestClassifier(n_estimators=n_estimators, random_state=seed, n_jobs=-1)
     cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=seed)
-    return cross_val_predict(clf, X, y, cv=cv, method="predict_proba", n_jobs=-1)
+    return cross_val_predict(clf, X, y, cv=cv, method="predict_proba", n_jobs=1)
 
 
 def confident_learning_scores(y, proba) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
