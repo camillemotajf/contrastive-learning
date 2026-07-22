@@ -72,7 +72,7 @@ def make_split(cfg: Config, fit_features: bool = True) -> Split:
 
     h, r, y = load_source(source)
     if subsample:
-        sel = np.random.RandomState(seed).choice(len(y), int(subsample), replace=False)
+        sel = _balanced_subsample_indices(y, int(subsample), seed)
         h = [h[i] for i in sel]; r = [r[i] for i in sel]; y = y[sel]
 
     h_tr, h_te, r_tr, r_te, y_tr, y_te, idx_tr, idx_te = split_raw(
@@ -88,6 +88,31 @@ def make_split(cfg: Config, fit_features: bool = True) -> Split:
         Xtr = pre.transform(h_tr, r_tr)
         Xte = pre.transform(h_te, r_te)
     return Split(h_tr, h_te, r_tr, r_te, y_tr, y_te, idx_tr, idx_te, pre, Xtr, Xte)
+
+
+def _balanced_subsample_indices(y: np.ndarray, n: int, seed: int) -> np.ndarray:
+    """Class-balanced subsample indices, capped by the smallest class.
+
+    The experiment runners use ``subsample`` for comparable per-source studies.
+    Sampling the cap uniformly can make the class balance drift, especially for
+    smaller sources, so we take the same number from each observed class.
+    """
+    rng = np.random.RandomState(seed)
+    classes, counts = np.unique(y, return_counts=True)
+    if len(classes) < 2:
+        return rng.choice(len(y), min(n, len(y)), replace=False)
+
+    per_class = min(n // len(classes), int(counts.min()))
+    if per_class < 1:
+        raise ValueError(f"subsample={n} is too small for {len(classes)} classes")
+
+    selected = []
+    for cls in classes:
+        idx = np.where(y == cls)[0]
+        selected.append(rng.choice(idx, per_class, replace=False))
+    out = np.concatenate(selected)
+    rng.shuffle(out)
+    return out
 
 
 def out_dir(cfg: Config, default_subdir: str) -> str:

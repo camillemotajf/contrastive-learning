@@ -113,7 +113,7 @@ class RequestsRepository:
                    headers,
                    params,
                    body,
-                   toString(datetime) AS datetime
+                   toString(datetime) AS request_datetime
             FROM requests
             WHERE {' AND '.join(where)}
             ORDER BY datetime DESC
@@ -173,7 +173,7 @@ class RequestsRepository:
             headers=json.dumps(headers, ensure_ascii=False),
             request=json.dumps(params, ensure_ascii=False),
             body=json.dumps(body, ensure_ascii=False),
-            datetime=str(row.get("datetime", "")),
+            datetime=str(row.get("request_datetime") or row.get("datetime", "")),
         )
 
 
