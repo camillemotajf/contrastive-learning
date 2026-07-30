@@ -1,0 +1,39 @@
+{
+  "scope": "traffic_source",
+  "interval": {
+    "start_inclusive": "2026-07-01 00:00:00",
+    "end_exclusive": "2026-07-08 00:00:00"
+  },
+  "datasets": [
+    {
+      "traffic_source_id": 6,
+      "traffic_source_name": "Outbrain",
+      "label_group": "bot",
+      "decisions": [
+        "bot"
+      ],
+      "rows": 1,
+      "path": "C:\\Users\\camil\\Documents\\contrastive-learning\\data\\raw_smoke\\outbrain\\outbrain-bot.json"
+    },
+    {
+      "traffic_source_id": 6,
+      "traffic_source_name": "Outbrain",
+      "label_group": "unsafe",
+      "decisions": [
+        "offer"
+      ],
+      "rows": 1,
+      "path": "C:\\Users\\camil\\Documents\\contrastive-learning\\data\\raw_smoke\\outbrain\\outbrain-unsafe.json"
+    },
+    {
+      "traffic_source_id": 6,
+      "traffic_source_name": "Outbrain",
+      "label_group": "safe",
+      "decisions": [
+        "safe"
+      ],
+      "rows": 1,
+      "path": "C:\\Users\\camil\\Documents\\contrastive-learning\\data\\raw_smoke\\outbrain\\outbrain-safe.json"
+    }
+  ]
+}

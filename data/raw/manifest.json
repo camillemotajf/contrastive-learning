@@ -1,0 +1,8 @@
+{
+  "scope": "traffic_source",
+  "interval": {
+    "start_inclusive": null,
+    "end_exclusive": null
+  },
+  "datasets": []
+}

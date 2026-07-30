@@ -1,0 +1,42 @@
+{
+  "outbrain": {
+    "n": 4000,
+    "unsafe": 2000,
+    "bot": 2000,
+    "top100_unsafe": 26,
+    "unsafe_cl_flags": 1,
+    "unsafe_heuristic_flags": 0,
+    "top_unsafe_sample_ids": [
+      "2127",
+      "3573",
+      "3021",
+      "432",
+      "133",
+      "1072",
+      "2481",
+      "2908",
+      "3163",
+      "1744"
+    ]
+  },
+  "facebook": {
+    "n": 4000,
+    "unsafe": 2000,
+    "bot": 2000,
+    "top100_unsafe": 17,
+    "unsafe_cl_flags": 0,
+    "unsafe_heuristic_flags": 2000,
+    "top_unsafe_sample_ids": [
+      "2899",
+      "3100",
+      "1511",
+      "101",
+      "3606",
+      "1768",
+      "3549",
+      "1761",
+      "580",
+      "2659"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "headers": "{\"host\": \"send.ostioonlinenews.com\", \"sec-fetch-mode\": \"navigate\", \"accept-encoding\": \"gzip, br\", \"sec-fetch-dest\": \"document\", \"accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \"x-forwarded-for\": \"23.113.43.180, 172.71.234.78, 138.117.219.209\", \"x-forwarded-proto\": \"http\", \"x-forwarded-port\": \"80\", \"x-amzn-trace-id\": \"Root=1-6a4d9222-5859dff108a8dd8018dd7af9\", \"x-real-ip\": \"172.71.234.78\", \"forwarded\": \"for=172.71.234.78\", \"x-forwarded-host\": \"send.ostioonlinenews.com\", \"priority\": \"u=0, i\", \"cf-ray\": \"a17ac8f7abb677a8-GRU\", \"cdn-loop\": \"cloudflare; loops=1\", \"cf-connecting-ip\": \"23.113.43.180\", \"cf-ipcountry\": \"US\", \"cf-visitor\": \"{\\\"scheme\\\":\\\"https\\\"}\", \"cf-cert-presented\": \"false\", \"cf-cert-revoked\": \"false\", \"cf-cert-verified\": \"false\", \"cf-ipcity\": \"Clovis\", \"cf-ipcontinent\": \"NA\", \"cf-iplatitude\": \"36.82523\", \"cf-iplongitude\": \"-119.70292\", \"cf-metro-code\": \"866\", \"cf-postal-code\": \"93612\", \"cf-region\": \"California\", \"cf-region-code\": \"CA\", \"cf-timezone\": \"America/Los_Angeles\", \"x-http-version\": \"HTTP/2\", \"x-http-method\": \"GET\", \"x-http-tls-version\": \"TLSv1.3\", \"x-http-ssl-protocol\": \"true\", \"x-asn\": \"7018\", \"x-client-bot\": \"false\", \"x-threat-score\": \"0\", \"User-Agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15\"}",
+    "request": "{\"src\": \"Fox News\", \"utm_medium\": \"Fox News Homepage\", \"utm_content\": \"If you suffer from joint pain , then read this\", \"sku\": \"00628f32838e836dc9838a1cb7cf6489b7\", \"OutbrainClickId\": \"v4-PiGLymJ-1204278409-0\", \"sub1\": \"00628f32838e836dc9838a1cb7cf6489b7\", \"sub2\": \"00699b93e32817f215ad6753747335a1a1\", \"sub3\": \"00e24904e6bc54c4c5dd4a4f8e88b88f35\", \"sub4\": \"006a7735e91fe6bc03344bee7765250f8d\", \"sub5\": \"If you suffer from joint pain , then read this\", \"sub6\": \"Fox News\", \"utm_campaign\": \"{replace}\", \"utm_source\": \"Outbrain\", \"ref_id\": \"v4-PiGLymJ-1204278409-0\", \"cost\": \"0.644\", \"dicbo\": \"v4-PiGLymJ-1204278409-0\"}",
+    "decision": "safe",
+    "campaign_id": 108089,
+    "traffic_source_id": 6,
+    "datetime": "2026-07-07 23:56:18",
+    "body": "{}"
+  }
+]

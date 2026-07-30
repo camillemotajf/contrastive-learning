@@ -1,0 +1,11 @@
+[
+  {
+    "headers": "{\"host\": \"firstjournal.online\", \"accept\": \"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\", \"accept-encoding\": \"gzip, deflate, br, zstd\", \"alt-used\": \"firstjournal.online\", \"upgrade-insecure-requests\": \"1\", \"sec-fetch-dest\": \"document\", \"sec-fetch-mode\": \"navigate\", \"priority\": \"u=0, i\", \"cf-ray\": \"a17ace2fa86764ee-GIG\", \"cf-connecting-ip\": \"2a02:4780:2b:1716:0:173b:ed03:1\", \"cf-ipcountry\": \"US\", \"cf-visitor\": \"{\\\"scheme\\\":\\\"https\\\"}\", \"cf-cert-presented\": \"false\", \"cf-cert-revoked\": \"false\", \"cf-cert-verified\": \"false\", \"x-http-version\": \"HTTP/2\", \"x-http-method\": \"POST\", \"x-http-tls-version\": \"TLSv1.3\", \"x-http-ssl-protocol\": \"true\", \"x-asn\": \"47583\", \"x-client-bot\": \"false\", \"x-threat-score\": \"0\", \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:152.0) Gecko/20100101 Firefox/152.0\"}",
+    "request": "{\"src\": \"DE_Merkur.de (Ippen Digital GmbH)\", \"utm_medium\": \"Merkur\", \"utm_content\": \"Lehrerin mischt Ingwer – nimmt seitdem nonstop ab\", \"sku\": \"000b117ec9bac0bb76f20003df36836427\", \"OutbrainClickId\": \"v4-Vm7pQjy-1205379849-1\", \"cpc\": \"{{cpc}\", \"r\": \"c42aea0d1ba22b1c463b44c1ebbb3bad\", \"p\": \"00a7d05529eac81c14cec7423a011ada1e\", \"t\": \"20260707195553\", \"sub1\": \"000b117ec9bac0bb76f20003df36836427\", \"sub2\": \"00a7d05529eac81c14cec7423a011ada1e\", \"sub3\": \"004739489da833936938539738236e8b85\", \"sub4\": \"00f59e6eef22701139688a4e9f592c1942\", \"sub5\": \"Lehrerin mischt Ingwer – nimmt seitdem nonstop ab\", \"sub6\": \"DE_Merkur.de (Ippen Digital GmbH)\", \"utm_campaign\": \"{replace}\", \"utm_source\": \"Outbrain\", \"ref_id\": \"v4-Vm7pQjy-1205379849-1\", \"cost\": \"0.551\", \"dicbo\": \"v4-Vm7pQjy-1205379849-1\"}",
+    "decision": "bot",
+    "campaign_id": 142469,
+    "traffic_source_id": 6,
+    "datetime": "2026-07-07 23:59:52",
+    "body": "{}"
+  }
+]

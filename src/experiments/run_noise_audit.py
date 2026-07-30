@@ -31,7 +31,7 @@ from src.noise.scoring import (
 )
 from src.utils.io import save_csv, save_json
 from src.utils.seeds import set_seed
-from ._common import out_dir, resolve_config, log
+from ._common import _balanced_subsample_indices, out_dir, resolve_config, log
 
 DEFAULTS = {
     "source": "outbrain", "seed": 42, "svd_dim": 64, "subsample": None,
@@ -61,7 +61,7 @@ def main():
     # fitting on all rows leaks no labels — appropriate for scoring given labels.
     h, r, y = load_source(cfg.get("source", "outbrain"))
     if cfg.get("subsample"):
-        sel = np.random.RandomState(seed).choice(len(y), int(cfg["subsample"]), replace=False)
+        sel = _balanced_subsample_indices(y, int(cfg["subsample"]), seed)
         h = [h[i] for i in sel]; r = [r[i] for i in sel]; y = y[sel]
     log.info(f"Auditing {len(y)} samples from source={cfg.get('source')}")
 
@@ -138,9 +138,9 @@ def main():
     print(f"  Confident-Learning flags  : {int(cl_flags.sum())} "
           f"({100 * cl_flags.mean():.2f}%)")
     print(f"  heuristic bot flags       : {int(heur['heuristic_bot_flag'].sum())}")
-    print(f"  top-100 KNN_raw ∩ KNN_cc  : {overlap['top100_knn_raw_AND_knn_cc']['intersection']}")
-    print(f"  top-100 KNN_cc ∩ CL       : {overlap['top100_knn_cc_AND_confident_learning']['intersection']}")
-    print(f"  top-100 ensemble ∩ heur.  : {overlap['top100_ensemble_AND_heuristic']['intersection']}")
+    print(f"  top-100 KNN_raw AND KNN_cc: {overlap['top100_knn_raw_AND_knn_cc']['intersection']}")
+    print(f"  top-100 KNN_cc AND CL     : {overlap['top100_knn_cc_AND_confident_learning']['intersection']}")
+    print(f"  top-100 ensemble AND heur.: {overlap['top100_ensemble_AND_heuristic']['intersection']}")
     print(f"\nSaved audit outputs under {base}")
 
 

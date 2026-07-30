@@ -39,20 +39,29 @@ def load_raw(file_unsafe: str, file_bots: str) -> Tuple[List[str], List[str], np
 
 
 def load_source(source: str = "outbrain", directory: str | None = None):
-    """Load ``{source}-unsafe-*.json`` + ``{source}-bot-*.json`` by name."""
-    directory = directory or data_dir()
-    unsafe = _first(os.path.join(directory, f"{source}-unsafe-*.json"))
-    bots = _first(os.path.join(directory, f"{source}-bot-*.json"))
+    """Load one source's unsafe + bot dumps.
+
+    Supports both the older flat layout::
+
+        data/outbrain-unsafe-2026-07.json
+        data/outbrain-bot-2026-07.json
+
+    and the traffic-source export layout::
+
+        data/raw/outbrain/outbrain-unsafe.json
+        data/raw/outbrain/outbrain-bot.json
+    """
+    directories = [directory] if directory else _default_data_dirs()
+    unsafe = _first(_source_patterns(directories, source, "unsafe"))
+    bots = _first(_source_patterns(directories, source, "bot"))
     return load_raw(unsafe, bots)
 
 
 def list_sources(directory: str | None = None) -> List[str]:
     """Traffic sources that have both a bot and an unsafe dump on disk."""
-    directory = directory or data_dir()
-    bots = {os.path.basename(p).split("-bot-")[0]
-            for p in glob.glob(os.path.join(directory, "*-bot-*.json"))}
-    unsafe = {os.path.basename(p).split("-unsafe-")[0]
-              for p in glob.glob(os.path.join(directory, "*-unsafe-*.json"))}
+    directories = [directory] if directory else _default_data_dirs()
+    bots = _sources_with_group(directories, "bot")
+    unsafe = _sources_with_group(directories, "unsafe")
     return sorted(bots & unsafe)
 
 
@@ -75,8 +84,59 @@ def split_raw(headers, requests, labels, test_size=0.3, seed=42):
     )
 
 
-def _first(pattern: str) -> str:
-    matches = sorted(glob.glob(pattern))
-    if not matches:
-        raise FileNotFoundError(f"No file matches {pattern}")
-    return matches[0]
+def _project_root() -> str:
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+
+
+def _default_data_dirs() -> List[str]:
+    """Search project-local exports first, then the legacy shared data dir."""
+    dirs = [
+        os.path.join(_project_root(), "data", "raw"),
+        data_dir(),
+    ]
+    out: List[str] = []
+    for path in dirs:
+        if path not in out:
+            out.append(path)
+    return out
+
+
+def _source_patterns(directories: List[str], source: str, group: str) -> List[str]:
+    return [
+        pattern
+        for directory in directories
+        for pattern in (
+            os.path.join(directory, f"{source}-{group}.json"),
+            os.path.join(directory, f"{source}-{group}-*.json"),
+            os.path.join(directory, source, f"{source}-{group}.json"),
+            os.path.join(directory, source, f"{source}-{group}-*.json"),
+        )
+    ]
+
+
+def _sources_with_group(directories: List[str], group: str) -> set[str]:
+    sources = set()
+    for directory in directories:
+        flat_patterns = [
+            os.path.join(directory, f"*-{group}.json"),
+            os.path.join(directory, f"*-{group}-*.json"),
+        ]
+        nested_patterns = [
+            os.path.join(directory, "*", f"*-{group}.json"),
+            os.path.join(directory, "*", f"*-{group}-*.json"),
+        ]
+        for pattern in flat_patterns + nested_patterns:
+            for path in glob.glob(pattern):
+                name = os.path.basename(path)
+                marker = f"-{group}"
+                if marker in name:
+                    sources.add(name.split(marker)[0])
+    return sources
+
+
+def _first(patterns: List[str]) -> str:
+    for pattern in patterns:
+        matches = sorted(glob.glob(pattern))
+        if matches:
+            return matches[0]
+    raise FileNotFoundError(f"No file matches any of: {patterns}")
